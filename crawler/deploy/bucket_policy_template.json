@@ -1,0 +1,13 @@
+{
+    "Version": "2012-10-17",
+    "Id": "bucket policy",
+    "Statement": [
+	{
+	    "Sid": "Allow to get files",
+	    "Effect": "Allow",
+	    "Principal": "*",
+	    "Action": "s3:GetObject",
+	    "Resource": "arn:aws:s3:::<BUCKET_NAME>/*"
+	    }
+	]
+}
